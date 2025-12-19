@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Enrollment Form</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <style>
+
+    body {
+      min-height: 100vh;
+      background-image: url('Angeles BG.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    </style>
+
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark px-4">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="logo.png" alt="OBMC Logo" height="40"  class="rounded-circle">
+   Enrollment
+  </a>
+<form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-light" type="submit">Search</button>
+  </form>
+
+</nav>
+
+
+
+<div class="container my-5">
+  <div class="card shadow-lg">
+    <div class="card-body p-4">
+
+      <h3 class="text-center mb-2">OBMC Student Enrollment Form</h3>
+      <p class="text-center text-muted mb-4">Fill out the form below to enroll for the upcoming school year.</p>
+
+      <form>
+    
+        <h5 class="mb-3">Student Information</h5>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" required>
+          </div>
+
+          <div class="col-md-4">
+            <label class="form-label">Birth Date</label>
+            <input type="date" class="form-control" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Gender</label>
+            <select class="form-select" required>
+              <option selected disabled>Select...</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Grade Level</label>
+            <select class="form-select" required>
+              <option selected disabled>Select...</option>
+              <option>Grade 7</option>
+              <option>Grade 8</option>
+              <option>Grade 9</option>
+              <option>Grade 10</option>
+            </select>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        
+        <h5 class="mb-3">Contact Details</h5>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="student@email.com" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" placeholder="0912 345 6789" required>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        
+        <h5 class="mb-3">Other Information</h5>
+        <div class="mb-3">
+          <label class="form-label d-block">Mode of Learning</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="mode" id="online" required>
+            <label class="form-check-label" for="online">Online</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="mode" id="ftf" required>
+            <label class="form-check-label" for="ftf">Face-to-Face</label>
+          </div>
+        </div>
+
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="confirm" required>
+          <label class="form-check-label" for="confirm">
+            I confirm that the information provided is true and complete.
+          </label>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-5">Submit Enrollment</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
